@@ -7,6 +7,7 @@ public class CumLauncher : MonoBehaviour
 {
     public ParticleSystem particles;
     public InputActionProperty triggerPressWatcher;
+    public AudioSource splat;
 
     private bool triggerIsPressed = false;
 
@@ -24,10 +25,12 @@ public class CumLauncher : MonoBehaviour
         if (!triggerIsPressed && triggerPressValue == 1)
         {
             particles.Play();
+            splat.Play();
             triggerIsPressed = true;
         }
         if (triggerPressValue == 0)
         {
+            particles.Stop();
             triggerIsPressed = false;
         }
     }
