@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.7302244, g: 0.7889752, b: 0.8498586, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -403,11 +403,11 @@ MonoBehaviour:
   m_depthTexture: {fileID: 8400000, guid: 75dc532df8709a746a172554e18fd6a9, type: 2}
   m_blurredDepthTexture: {fileID: 8400000, guid: 5cb8e850653248940b10cb45864b3e61, type: 2}
   m_blurredDepthTempTexture: {fileID: 8400000, guid: 360089640c559164abb9ce3ba328af06, type: 2}
-  m_pointScale: 1
-  m_pointRadius: 1
+  m_pointScale: 0.76
+  m_pointRadius: 0.85
   m_blur: 1
-  m_blurScale: 1
-  m_blurRadius: 10
+  m_blurScale: 0.61
+  m_blurRadius: 23
   m_minDepth: 0
   m_blurDepthFalloff: 2
 --- !u!4 &1342173395
@@ -976,7 +976,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.4
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1352,7 +1352,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 4
+    type: 16
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -4307,7 +4307,7 @@ ParticleSystem:
     serializedVersion: 4
     type: 1
     collisionMode: 0
-    colliderForce: 0
+    colliderForce: 10
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
@@ -4321,7 +4321,7 @@ ParticleSystem:
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.001
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4479,7 +4479,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 0.01
+    radiusScale: 0.99
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294967295
