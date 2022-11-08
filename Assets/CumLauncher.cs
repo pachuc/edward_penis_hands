@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class CumLauncher : MonoBehaviour
 {
     public ParticleSystem particles;
+    public ParticleSystem dribbles;
     public InputActionProperty triggerPressWatcher;
     public AudioSource splat;
 
@@ -26,11 +27,13 @@ public class CumLauncher : MonoBehaviour
         {
             particles.Play();
             splat.Play();
+            dribbles.Play();
             triggerIsPressed = true;
         }
         if (triggerPressValue == 0)
         {
             particles.Stop();
+            dribbles.Stop();
             triggerIsPressed = false;
         }
     }
